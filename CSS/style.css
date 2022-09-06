@@ -123,6 +123,23 @@ footer div a img{
 .footer--position{
     margin-bottom: 40px;
 }
+
+
+.footer--scale:hover{
+    transform: scaleX(.8);
+    cursor: pointer;
+    transition: transform 1s;
+}
+@keyframes text--animation{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.text--animation{
+    animation-name: text--animation;
+    animation-duration: 3s;
+}
+
+
 @media screen and (min-width: 1281px){
     .grid-layout{
     display: grid;
