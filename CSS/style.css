@@ -5,7 +5,7 @@
     margin: 0;
 }
 html{
-    font-size: 62.5%;
+    font-size: 100%;
 }
 
 body{
@@ -15,27 +15,27 @@ body{
 }
 h1{
     color: rgb(177, 73, 130);
-        font-size: 4rem;
+        font-size: 3rem;
 }
 h2{
     color: cornflowerblue;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: .5%;
     text-decoration: underline;
 }
 h3{
     color: rgb(177, 73, 130);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 30px;
     }
 h4{
     color: rgb(39, 121, 110);
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin: 20px;
 }
 h5{
     color: black;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin: 20px;
 }
 h1,h2,h3,h4,h5{
@@ -46,14 +46,14 @@ main section p{
     background-color: rgb(238, 192, 238, .5);
     color: rgb(0, 0, 0);
     font-family: sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 div section p{
     background-color: rgb(238, 192, 238, .5);
     color: rgb(0, 0, 0);
     font-family: sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 nav{
@@ -80,7 +80,11 @@ nav ul{
      justify-content: flex-end;
      z-index: +1;
 }
-
+.nav-bg{
+    background-color: rgba(73, 73, 214, 0.3);
+    z-index: +2;
+    position: fixed;
+}
 nav ul li a:hover{
     color: aquamarine;
     text-decoration: underline;
@@ -101,15 +105,15 @@ nav ul li a:hover{
 .section__iframe--bombs{
     position: relative;
     width: 50%;
-    padding-left: 25%;
+    margin: 0 25%;
 }
 .footer__info--italic{
     font-style: italic;
     padding: 50px;
 }
 .footer__icon--sm{
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     
     }
 .footer__icon--position{
@@ -123,7 +127,23 @@ footer div a img{
 .footer--position{
     margin-bottom: 40px;
 }
-@media screen and (min-width: 1281px){
+.footer--scale:hover{
+    transform: scaleX(.8);
+    cursor: pointer;
+    transition: transform 1s;
+}
+@keyframes text--animation{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.text--animation{
+    animation-name: text--animation;
+    animation-duration: 3s;
+}
+.button-bg{
+    background-color: coral;
+}
+@media screen and (min-width: 992px){
     .grid-layout{
     display: grid;
     grid-template-columns: 40% 20% 40% ;
@@ -139,18 +159,24 @@ footer div a img{
         margin: 0px auto 0px 5px;
     }
     .main__video--position{
-        width: 700px;
-        height: 700px;
-        margin-left:  7vw;
+        width: 70%;
+        margin: 4vh 15%;
         margin-top: 2vh;
     }
     .main--info{
         text-align: center;
-        padding: 20px;
-        margin: 4vh 2vw;  
+        padding: 10px;
+        margin: 4vh 1vw;  
         overflow-y:hidden;  
     }
+    .main--info1{
+        text-align: center;
+        padding: 10px;
+        margin: 4vh 0;  
+        overflow-y:hidden;
+        width: 90%;
 
+    }
 
     .flex-steamers{
         display: flex;
@@ -312,7 +338,7 @@ footer div a img{
         margin: 20px ;
     }
 }
-@media screen and (max-width:1280px){
+@media screen and (max-width:991px){
     .grid-layout{
     display: grid;
     grid-template-columns: 40% 60% ;
@@ -512,7 +538,7 @@ footer div a img{
         }
 
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:768px){
     .grid-layout{
     display: grid;
     grid-template-columns: 1fr ;
@@ -522,10 +548,14 @@ footer div a img{
     }
     nav ul li a{
         color: rgb(0, 0, 0);
-        font-size: 2rem;
+        
         font-style: italic;
         text-decoration: none;
         margin: 0px ;
+
+    }
+    .nav-font-size{
+        font-size: 2rem;
     }
     .main__video--position{
         width: 400px;

@@ -6,28 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="bombas de baño, bomba de baño, shower steamers">
     <title>Bubble's bath - Bombas de baño</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon"> 
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">
-            <img width="200px" height="50px" src="img/logo.png" alt="Logo de Bubble's bath">
-        </a>
-        <ul class="nav__ul--position">
-            <li>
-                <a class="nav__li--position" href="Productos/bombas.html">Bombas</a>
-            </li>
-            <li>
-                <a class="nav__li--position" href="Productos/steamers.html">Steamers</a>
-            </li>
-            <li>
-                <a class="nav__li--position" href="formas-de-uso.html">Formas de uso</a>
-            </li>
-            <li>
-                <a class="nav__li--position" href="contacto.html">Contacto</a>
-            </li>
-        </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg nav-bg">
+        <div class="container">
+            <a class="navbar-nav" href="index.html">
+                <img width="200px" height="50px" src="img/logo.png" alt="Logo de Bubble's bath">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="formas-de-uso.html">Formas de uso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Productos/bombas.html">Bombas de baño</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Productos/steamers.html">Steamers</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <header>
         <img width="100%" height="150" src="img/header.jpg" alt="Bombas de baño"> 
@@ -36,36 +46,32 @@
     <main>
         <h2>Contacto</h2>
         <section class="flex-contacto">
-            <div>
-                <iframe width="400px" height="400px" class="mapa"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.1164415993167!2d-57.559298784676!3d-37.99774437971955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d92b67bcdb95%3A0x273a16c103e1f471!2sSophie%20Heart%20Bath%20Bombs!5e0!3m2!1ses!2sar!4v1660015819934!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-sm-12 col-md-12 col-lg-6 mx-3 my-2 text--animation">
+                <iframe rows="" class="col-sm-12 col-md-12 col-lg-12 text--animation "  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.1164415993167!2d-57.559298784676!3d-37.99774437971955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d92b67bcdb95%3A0x273a16c103e1f471!2sSophie%20Heart%20Bath%20Bombs!5e0!3m2!1ses!2sar!4v1660015819934!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div>
-                <form class="main__form--position" action="#">
-                    <div>
-                    <label class="main__form--text" for="Nombre">Nombre:</label>
-                    <input class="main__form--size" type="text" id="nombre">
+                <form class="row g-3 text--animation">
+                    <div class="col-sm-12 col-md-12 col-lg-6 my-2 text--animation">
+                        <input type="text" class="form-control text--animation" placeholder="Nombre" aria-label="Nombre">
                     </div>
-                    <div>
-                    <label class="main__form--text" for="Apellido">Apellido:</label>
-                    <input class="main__form--size" type="text" id="apellido">
+                    <div class="col-sm-12 col-md-12 col-lg-6 my-2 text--animation">
+                        <input type="text" class="form-control text--animation" placeholder="Apellido" aria-label="Apellido">
                     </div>
-                    <div>
-                    <label class="main__form--text" for="email">Email:</label>
-                    <input type="email" id="email">
+                    <div class="col-md-12 col-lg-12 my-2 text--animation">
+                        <input type="email" class="form-control text--animation" placeholder="Email" aria-label="Email" id="inputEmail4">
                     </div>
-                    <div>
-                    <label class="main__form--text" for="tel">Teléfono:</label>
-                    <input type="tel" id="telefono">
+                    <div class="col-md-12 my-2 text--animation">
+                        <input type="tel" class="form-control text--animation" placeholder="Telefono" aria-label="Telefono" id="inputTel">
                     </div>
-                    <div>
-                    <label class="main__form--text" for="comentario">Dejanos un mensaje</label>
-                    <br>
-                    <textarea name="" id="comentario" cols="50" rows="10"></textarea>
+                    <div class="my-2 text--animation">
+                        <textarea class="form-control text--animation" placeholder="Comentarios" aria-label="Comentarios" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <input type="reset" value="Cancelar">
-                    <input type="submit" value="Enviar">
+                    <div class="col-12 text--animation">
+                    <button class="btn button-bg text--animation" type="submit">Enviar</button>
+                    </div>
                 </form>
-            </div>    
+            </div>
+            
             
         </section>
     </main>
@@ -73,13 +79,13 @@
         <h4>Conocé mas de nuestros productos en las redes sociales:</h4>
         <div class="footer__icon--position">
             <a href="mailto:agustinasol08@gmail.com">
-                <img src="img/gmail.png" alt="EMAIL" class="footer__icon--sm">
+                <img src="img/gmail.png" alt="EMAIL" class="footer__icon--sm footer--scale">
             </a>
             <a href="https://api.whatsapp.com/send?phone=5491131849579" target="_blank">
-                <img src="img/whatsapp.png" alt="whatsapp" class="footer__icon--sm">
+                <img src="img/whatsapp.png" alt="whatsapp" class="footer__icon--sm footer--scale">
             </a>
             <a href="https://www.instagram.com/sophieheartbathart/" target="_blank">
-                <img src="img/instagram.png" alt="Instagram" class="footer__icon--sm">
+                <img src="img/instagram.png" alt="Instagram" class="footer__icon--sm footer--scale">
             </a>
         </div>
         <h5>Revendedora oficial de Sophie Heart</h5>
