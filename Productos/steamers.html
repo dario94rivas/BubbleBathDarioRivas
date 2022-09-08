@@ -6,28 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="bombas de baño, bomba de baño, shower steamers">
     <title>Bubble's bath - Bombas de baño</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="shortcut icon" href="../img/logo.jpeg" type="image/x-icon"> 
 </head>
 <body>
-    <nav>
-        <a href="../index.html">
-            <img width="200px" height="50px" src="../img/logo.png" alt="Logo de Bubble's bath">
-        </a>
-        <ul class="nav__ul--position">
-            <li>
-                <a class="nav__li--position" href="bombas.html">Bombas</a>
-            </li>
-            <li>
-                <a class="nav__li--position" href="steamers.html">Steamers</a>
-            </li>
-            <li>
-                <a class="nav__li--position" href="../formas-de-uso.html">Formas de uso</a>
-            </li>
-            <li>
-                <a class="nav__li--position" href="../contacto.html">Contacto</a>
-            </li>
-        </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg nav-bg">
+        <div class="container">
+            <a class="navbar-nav" href="../index.html">
+                <img width="200px" height="50px" src="../img/logo.png" alt="Logo de Bubble's bath">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../formas-de-uso.html">Formas de uso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bombas.html">Bombas de baño</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="steamers.html">Steamers</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </nav>
     <header>
         <img width="100%" height="150" src="../img/header.jpg" alt="Bombas de baño"> 
@@ -38,32 +49,48 @@
             <h2>Steamers</h2>
             <p class="main--info text--animation">
                 ¡Una experiencia de aroma terapia en tu ducha! Nuestros Shower Steamers transportan aceites esenciales y refrescan a través del vapor de la ducha. Son elaborados con aceites esenciales puros y cristales de mentol para disfrutar en cualquier momento del día. Hay cuatro variedades que harán de la hora del baño una experiencia única : 
-            <ul class="flex-steamers">
-                <li>
-                    <div class="orange">
-                        <p class="ul__img--text text--animation">Naranja: Energizante mental/ te da un punch de energía/ Recomendado para comenzar el día.</p>
-                        <img class="ul__img--position text--animation" src="../img/steamernaranja.png" alt="Naranja">
-                    </div>
-                </li>
-                <li>
-                    <div class="mint">
-                        <p class="ul__img--text text--animation">Menta : Reduce la sensación de fatiga /descongestivo respiratorio / alivia dolores de cabeza.</p>
-                        <img class="ul__img--position text--animation" src="../img/steamermenta.png" alt="Menta">
-                    </div>
-                </li>
-                <li>
-                    <div class="lavender">
-                        <p class="ul__img--text text--animation">Lavanda : Ayuda a inducir el sueño, calma el cuerpo y la mente - recomendado para finalizar el día.</p>
-                        <img class="ul__img--position text--animation" src="../img/lavanda.PNG" alt="Lavanda">
-                    </div>
-                </li>
-                <li>
-                    <div class="kiwi">
-                        <p class="ul__img--text text--animation">Pomelo-Kiwi : Tiene un efecto refrescante y descongestivo de los cristales de mentol.</p>
-                        <img class="ul__img--position text--animation" src="../img/heartsteamer.png" alt="Tropical">
-                    </div>
-                </li>
-            </ul>
+            </p>
+            <div class="container-fluid">
+                <div class="row">
+                    <article class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card text--animation">
+                            <img src="../img/steamernaranja.png" class="card-img-top text--animation" alt="Naranja">
+                            <div class="card-body text--animation">
+                                <h3 class="card-title text--animation">Naranja</h3>
+                                <p class="card-text text--animation">Energizante mental/ te da un punch de energía/ Recomendado para comenzar el día.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card text--animation">
+                            <img src="../img/steamermenta.png" class="card-img-top text--animation" alt="Menta">
+                            <div class="card-body text--animation">
+                                <h3 class="card-title text--animation">Menta</h3>
+                                <p class="card-text text--animation">Reduce la sensación de fatiga /descongestivo respiratorio / alivia dolores de cabeza.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card text--animation">
+                            <img src="../img/lavanda.PNG" class="card-img-top text--animation" alt="Lavanda">
+                            <div class="card-body text--animation">
+                                <h3 class="card-title text--animation">Lavanda</h3>
+                                <p class="card-text text--animation">Ayuda a inducir el sueño, calma el cuerpo y la mente - recomendado para finalizar el día.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card text--animation">
+                            <img src="../img/heartsteamer.png" class="card-img-top text--animation" alt="Tropical">
+                            <div class="card-body text--animation">
+                                <h3 class="card-title text--animation">Tropical</h3>
+                                <p class="card-text text--animation">Tiene un efecto refrescante y descongestivo de los cristales de mentol.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>    
+            </div>
+                
         </section>
     </main>
     <footer class="footer__info--italic">
