@@ -1,0 +1,21 @@
+footer div a img{
+    display: inline-block;
+}
+.footer__info--italic{
+    font-style: $textItalic;
+    gap: $gapLg;
+}
+.footer__icon--sm{
+    width: 5em;
+    height: 5em;
+}
+.footer__icon--position{
+    text-align: center;
+    gap: $gapLg;
+    margin: 50px 20px;
+}
+.footer--scale:hover{
+    transform: scaleX(.8);
+    cursor: pointer;
+    transition: transform 1s;
+}

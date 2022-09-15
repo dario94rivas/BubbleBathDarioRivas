@@ -1,0 +1,247 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    font-size: $textLg;
+    color:$mainColor;
+    gap: $gapLg;
+    font-family: $mainFont;
+    text-align: center;
+
+}
+h2{
+    font-size: $textMd;
+    gap: $gapMd;
+    color:$secondaryColor;
+    text-align: center;
+}
+h3{
+    font-size: $textSm;
+    color:$mainColor;
+    gap: $gapMd;
+    font-family: $mainFont;
+    text-align: center;
+}
+h4{
+    color:$otherColor;
+    font-size: $textSm;
+    gap: $gapSm;
+    text-align: center;
+}
+h5{
+    color:$infoColor;
+    font-size: $textXs;
+    gap: $gapSm;
+    text-align: center;
+}
+main section p{
+    background-color: $backgroundColor;
+    color: $infoColor;
+    font-size: $textSm;
+    font-weight: $textHeavy;
+}
+    div section p{
+        background-color: $backgroundColor;
+        color: $infoColor;
+        font-size: $textSm;
+        font-weight: $textHeavy;
+    }
+    .header__img--position{
+        position:absolute;
+    }
+    .header__titulo{
+        border-bottom: double $mainColor 4px;
+    }
+    .main__form--text{
+        font-size: $textMd;
+    }
+    @keyframes text--animation{
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    .text--animation{
+        animation-name: text--animation;
+        animation-duration: 3s;
+    }
+    @media screen and (min-width: 992px){
+        .grid-layout{
+        display: grid;
+        grid-template-columns: 40% 20% 40% ;
+        grid-template-rows: 50px 100px 500px 500px 100px;
+        width: 100%;
+        margin: 0 auto;   
+        }
+    
+    .main__video--position{
+        width: 70%;
+        margin: 4vh 15%;
+        margin-top: 2vh;
+    }
+    .main--info{
+        text-align: center;
+        gap: $gapMd;
+        margin: 4vh 1vw;  
+        overflow-y:hidden;  
+    }
+    .main--info1{
+        text-align: center;
+        gap: $gapMd;
+        margin: 4vh 0;  
+        overflow-y:hidden;
+        width: 90%;
+
+    }
+    .menu{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .header{
+        grid-column: 1/4;
+        grid-row: 1/3;
+        
+    }   
+    .main{
+        grid-column: 1/3;
+        grid-row: 3/5;
+        margin-top: $gapXxl;
+    }
+    .texto-1{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin-top: $gapXxl;
+        margin-right: $gapXxl;
+        display: flex;
+    }
+    .texto-2{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        margin-top: $gapXl;
+        margin-right: $gapXxl;
+    }
+    .pie{
+        grid-column: 1/4;
+        grid-row: 5/6;
+        margin-top: auto;
+        }
+    }
+    @media screen and (max-width:991px){
+        .grid-layout{
+        display: grid;
+        grid-template-columns: 40% 60% ;
+        grid-template-rows: 50px 100px 500px 300px 100px;
+        width: 100%;
+        margin: 0 auto;   
+        }
+        .main__video--position{
+            width: 450px;
+            height: 450px;
+            margin-top: 2vh;
+        }
+        .main--info{
+            text-align: center;
+            overflow-y:hidden;  
+        }
+        .menu{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            }
+            .header{
+            grid-column: 1/3;
+            grid-row: 1/3;
+        
+            }   
+            .main{
+            grid-column: 2/3;
+            grid-row: 3/5;
+            margin-top: $gapXxl;
+            margin-right: $gapMd;
+            margin-left: $gapSm;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            }
+            .texto-1{
+            grid-column: 1/2;
+            grid-row: 3/4;
+            margin-top: 10vh;
+            margin-left: $gapMd;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            }
+            .texto-2{
+            grid-column: 1/2;
+            grid-row: 4/5;
+            
+            margin-left: $gapMd;
+            display: flex;
+            flex-direction:row-reverse ;
+            justify-content:flex-end;
+            }
+            .pie{
+            grid-column: 1/3;
+            grid-row: 5/6;
+            padding-top: $gapXxl;
+            }
+    
+        }
+    @media screen and (max-width:768px){
+            .grid-layout{
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 50px 100px 500px 500px 500px 100px;
+            width: 100%;
+            margin: 0px 0px;   
+            }
+            .main__video--position{
+                width: 400px;
+                height: 400px;
+                margin-top: 2vh;
+            }
+            .main--info{
+                text-align: center;
+                margin-top: $gapSm;
+                overflow-y: hidden;  
+            }
+            .menu{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                }
+                .header{
+                grid-column: 1/2;
+                grid-row: 1/3;
+            
+                }   
+                .main{
+                grid-column: 1/2;
+                grid-row: 3/4;
+                margin-top: 150px;
+                margin-right: $gapMd;
+                margin-left: $gapMd;
+                
+                justify-content: center;
+                }
+                .texto-1{
+                grid-column: 1/2;
+                grid-row: 4/5;
+                margin-top: $gapXxl;
+                margin-left: $gapMd;
+                margin-right: $gapMd;
+                
+            
+                }
+                .texto-2{
+                grid-column: 1/2;
+                grid-row: 5/6;
+                margin-right: $gapMd;
+                margin-left: $gapMd;
+                
+                }
+                .pie{
+                grid-column: 1/2;
+                grid-row: 5/7;
+                margin-top: 200px;
+                }
+                }

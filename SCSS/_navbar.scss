@@ -1,0 +1,27 @@
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $backgroundNav;
+    
+    ul{
+        display: flex;
+        font-weight: $textBold;
+        list-style: none;
+        gap: $gapSm;
+        justify-content: flex-end;
+        li{
+            gap: $gapSm;
+            a{
+                text-decoration: none;
+                
+            }
+        }
+    }
+}
+.nav-bg{
+    background-color: $backgroundNav;;
+    z-index: +2;
+    position: fixed;
+    width: 100%;
+}
