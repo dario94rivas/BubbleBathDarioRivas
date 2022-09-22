@@ -5,7 +5,7 @@ body{
 }
 h1{
     font-size: $textLg;
-    color:$mainColor;
+    color: map-get($map: $fontColor, $key:'uno' );
     gap: $gapLg;
     font-family: $mainFont;
     text-align: center;
@@ -14,37 +14,37 @@ h1{
 h2{
     font-size: $textMd;
     gap: $gapMd;
-    color:$secondaryColor;
+    color: map-get($map: $fontColor, $key:'dos' );
     text-align: center;
 }
 h3{
     font-size: $textSm;
-    color:$mainColor;
+    color: map-get($map: $fontColor, $key:'uno' );
     gap: $gapMd;
     font-family: $mainFont;
     text-align: center;
 }
 h4{
-    color:$otherColor;
+    color: map-get($map: $fontColor, $key:'cuatro' );
     font-size: $textSm;
     gap: $gapSm;
     text-align: center;
 }
 h5{
-    color:$infoColor;
+    color: map-get($map: $fontColor, $key:'tres' );
     font-size: $textXs;
     gap: $gapSm;
     text-align: center;
 }
 main section p{
-    background-color: $backgroundColor;
-    color: $infoColor;
+    background-color: map-get($map: $bgColor, $key:'uno' );
+    color: map-get($map: $fontColor, $key:'tres' );
     font-size: $textSm;
     font-weight: $textHeavy;
 }
     div section p{
-        background-color: $backgroundColor;
-        color: $infoColor;
+        background-color: map-get($map: $bgColor, $key:'uno' );
+        color: map-get($map: $fontColor, $key:'tres' );
         font-size: $textSm;
         font-weight: $textHeavy;
     }
@@ -57,6 +57,18 @@ main section p{
     .main__form--text{
         font-size: $textMd;
     }
+    .section__iframe--bombs{
+        position: relative;
+        width: 50%;
+        margin: $gapLg 25%;
+        
+    }
+    .section__video--steamers{
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-bottom: $gapLg;
+    }
     @keyframes text--animation{
         from{opacity: 0;}
         to{opacity: 1;}
@@ -64,6 +76,13 @@ main section p{
     .text--animation{
         animation-name: text--animation;
         animation-duration: 3s;
+    }
+
+    .button-bg{
+        background-color: map-get($map: $bgColor, $key:'tres' );
+    }
+    .card-bg{
+        background-color: map-get($map: $bgColor, $key:'uno' );
     }
     @media screen and (min-width: 992px){
         .grid-layout{
@@ -91,7 +110,12 @@ main section p{
         margin: 4vh 0;  
         overflow-y:hidden;
         width: 90%;
-
+    }
+    .flex-usos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
     .menu{
         grid-column: 1/4;
@@ -125,6 +149,72 @@ main section p{
         grid-row: 5/6;
         margin-top: auto;
         }
+    .iframe{
+        width:"560vw"; 
+        height:"350vh";
+        }
+    .video{
+        width:"560vw"; 
+        height:"350vh";
+            
+        }
+    .flex-contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+    .main__form--position{
+        margin: $gapSm;
+        }
+    .mapa{
+        margin: $gapSm ;
+        }
+        .section__div--bombs{
+            margin-top: $gapXs;
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            grid-template-rows: 400px 400px;
+            grid-template-areas: 
+            "unicornio oso oso"
+            "unicornio star nube";  
+            justify-content: center; 
+            
+            
+        }
+        .unicornio{
+        grid-area: unicornio;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        object-fit: cover;
+    
+        }
+        .oso{
+        grid-area: oso;
+        width: 100%;
+        height: 100%;
+        margin-left: $gapXs;
+        margin-bottom: $gapXs;
+        align-items: center;
+        object-fit: cover;
+        }
+        .estrella{
+        grid-area: star;
+        width: 100%;
+        height: 100%;
+        margin-left: $gapXs;
+        align-items: center;
+        object-fit: cover;
+        }
+        .nube{
+        grid-area: nube;
+        width: 100%;
+        height: 100%;
+        margin-left: $gapXs;
+        align-items: center;
+        object-fit: cover;
+        }
+    
     }
     @media screen and (max-width:991px){
         .grid-layout{
@@ -185,7 +275,66 @@ main section p{
             grid-row: 5/6;
             padding-top: $gapXxl;
             }
-    
+            .flex-contacto{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .mapa{
+                margin: $gapSm ;
+            }
+            .main__form--position{
+                margin: $gapSm;
+            }
+            .section__div--bombs{
+                margin-top: $gapSm;
+                display: grid;
+                grid-template-columns: 400px 400px ;
+                grid-template-rows: 400px 400px 400px;
+                grid-template-areas: 
+                "unicornio oso"
+                "unicornio star"
+                "nube nube";  
+                justify-content: center; 
+                
+            }
+            .unicornio{
+                grid-area: unicornio;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                object-fit: cover;
+            
+                }
+                .oso{
+                grid-area: oso;
+                width: 100%;
+                height: 100%;
+                margin-left: $gapXs;
+                margin-bottom: $gapXs;
+                align-items: center;
+                object-fit: cover;
+                }
+                .estrella{
+                grid-area: star;
+                width: 100%;
+                height: 100%;
+                margin-left: $gapXs;
+                align-items: center;
+                object-fit: cover;
+                }
+                .nube{
+                grid-area: nube;
+                width: 100%;
+                height: 100%;
+                margin-top: 5px;
+                margin-left: 5px;
+                align-items: center;
+                object-fit: cover;
+            }
+
+        
         }
     @media screen and (max-width:768px){
             .grid-layout{
@@ -244,4 +393,59 @@ main section p{
                 grid-row: 5/7;
                 margin-top: 200px;
                 }
+                .flex-contacto{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    }
+                .mapa{
+                    margin: $gapSm ;
                 }
+                .main__form--position{            
+                    margin: $gapSm;
+                }
+                .section__div--bombs{
+                    margin-top: $gapSm;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;   
+                }
+                
+                .unicornio{
+                    grid-area: unicornio;
+                    width: 70%;
+                    height: 70%;
+                    margin-bottom: $gapXs;
+                    align-items: center;
+                    object-fit: cover;
+                
+                }
+                .oso{
+                    grid-area: oso;
+                    width: 70%;
+                    height: 70%;
+                    margin-bottom: $gapXs;
+                    align-items: center;
+                    object-fit: cover;
+                    margin-right: $gapXs;
+                }
+                .estrella{
+                    grid-area: star;
+                    width: 70%;
+                    height: 70%;
+                    margin-bottom: $gapXs;
+                    margin-right: $gapXs;
+                    align-items: center;
+                    object-fit: cover;
+                }
+                .nube{
+                    grid-area: nube;
+                    width: 70%;
+                    height: 70%;
+                    margin-right: $gapXs;
+                    align-items: center;
+                    object-fit: cover;
+                }
+            }

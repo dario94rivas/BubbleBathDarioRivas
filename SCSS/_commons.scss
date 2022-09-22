@@ -5,9 +5,27 @@ $infoColor: black;
 $otherColor:rgb(39, 121, 110);
 
 
+
 //background text color
 $backgroundColor: rgb(238, 192, 235, .5);
 
-//backgroun nav color
+//background nav color
 $backgroundNav: rgb(180, 122, 214);
 
+//btns colors
+$btnForm: coral;
+
+//maps font color
+$fontColor:(
+    'uno':rgb(177, 73, 130),
+    'dos': rgb(100,149,237),
+    'tres':rgb(0,0,0),
+    'cuatro':rgb(39,121,140),
+);
+
+//maps bg color
+$bgColor: (
+    'uno':rgb(238, 192, 235, .5),
+    'dos': rgb(180, 122, 214),
+    'tres':rgb(255,127,80),
+)

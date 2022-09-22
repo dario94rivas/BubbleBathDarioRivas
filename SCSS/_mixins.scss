@@ -1,0 +1,33 @@
+@mixin flex ($direction, $justify, $allign, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $allign;
+    flex-wrap: $wrap;
+}
+@mixin text ($size, $color, $weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+}
+nav{
+    @include flex (row, flex-end, center, nowrap );
+    background-color:rgb(180,122,214);
+    ul{
+        @include flex(row,flex-end,center,nowrap );
+        font-weight: 600;
+        list-style: none;
+        gap: 20px;
+        li{
+            gap: 20px;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+.flex-usos{
+    @include flex (column, none,center,nowrap);
+}
