@@ -1,4 +1,5 @@
 footer div a img{
+    @extend .text--animation;
     display: inline-block;
 }
 .footer__info--italic{

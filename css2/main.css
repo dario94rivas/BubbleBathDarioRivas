@@ -1,16 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+.nav-bg {
+  background-color: rgb(180, 122, 214);
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: nowrap;
   background-color: rgb(180, 122, 214);
 }
 nav ul {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
   font-weight: 600;
   list-style: none;
   gap: 20px;
-  justify-content: flex-end;
 }
 nav ul li {
   gap: 20px;
@@ -19,11 +31,12 @@ nav ul li a {
   text-decoration: none;
 }
 
-.nav-bg {
-  background-color: rgb(180, 122, 214);
-  z-index: 2;
-  position: fixed;
-  width: 100%;
+.flex-usos {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 body {
@@ -95,6 +108,19 @@ div section p {
   font-size: 2em;
 }
 
+.section__iframe--bombs {
+  position: relative;
+  width: 50%;
+  margin: 40px 25%;
+}
+
+.section__video--steamers {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 40px;
+}
+
 @-webkit-keyframes text--animation {
   from {
     opacity: 0;
@@ -117,6 +143,14 @@ div section p {
           animation-name: text--animation;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+}
+
+.button-bg {
+  background-color: coral;
+}
+
+.card-bg {
+  background-color: rgba(238, 192, 235, 0.5);
 }
 
 @media screen and (min-width: 992px) {
@@ -144,6 +178,11 @@ div section p {
     margin: 4vh 0;
     overflow-y: hidden;
     width: 90%;
+  }
+  .flex-usos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .menu {
     grid-column: 1/4;
@@ -175,6 +214,69 @@ div section p {
     grid-column: 1/4;
     grid-row: 5/6;
     margin-top: auto;
+  }
+  .iframe {
+    width: "560vw";
+    height: "350vh";
+  }
+  .video {
+    width: "560vw";
+    height: "350vh";
+  }
+  .flex-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .main__form--position {
+    margin: 20px;
+  }
+  .mapa {
+    margin: 20px;
+  }
+  .section__div--bombs {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: "unicornio oso oso" "unicornio star nube";
+    justify-content: center;
+  }
+  .unicornio {
+    grid-area: unicornio;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .oso {
+    grid-area: oso;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .estrella {
+    grid-area: star;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .nube {
+    grid-area: nube;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (max-width: 991px) {
@@ -234,6 +336,63 @@ div section p {
     grid-row: 5/6;
     padding-top: 100px;
   }
+  .flex-contacto {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mapa {
+    margin: 20px;
+  }
+  .main__form--position {
+    margin: 20px;
+  }
+  .section__div--bombs {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas: "unicornio oso" "unicornio star" "nube nube";
+    justify-content: center;
+  }
+  .unicornio {
+    grid-area: unicornio;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .oso {
+    grid-area: oso;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .estrella {
+    grid-area: star;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .nube {
+    grid-area: nube;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media screen and (max-width: 768px) {
   .grid-layout {
@@ -286,6 +445,63 @@ div section p {
     grid-column: 1/2;
     grid-row: 5/7;
     margin-top: 200px;
+  }
+  .flex-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mapa {
+    margin: 20px;
+  }
+  .main__form--position {
+    margin: 20px;
+  }
+  .section__div--bombs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .unicornio {
+    grid-area: unicornio;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 10px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .oso {
+    grid-area: oso;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 10px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 10px;
+  }
+  .estrella {
+    grid-area: star;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .nube {
+    grid-area: nube;
+    width: 70%;
+    height: 70%;
+    margin-right: 10px;
+    align-items: center;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 footer div a img {
