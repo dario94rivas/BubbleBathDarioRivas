@@ -56,7 +56,7 @@ h1 {
 h2 {
   font-size: 2em;
   gap: 30px;
-  color: cornflowerblue;
+  color: rgb(100, 149, 237);
   text-align: center;
 }
 
@@ -69,14 +69,14 @@ h3 {
 }
 
 h4 {
-  color: rgb(39, 121, 110);
+  color: rgb(39, 121, 140);
   font-size: 1.5em;
   gap: 20px;
   text-align: center;
 }
 
 h5 {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.3em;
   gap: 20px;
   text-align: center;
@@ -84,14 +84,14 @@ h5 {
 
 main section p {
   background-color: rgba(238, 192, 235, 0.5);
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.5em;
   font-weight: 700;
 }
 
 div section p {
   background-color: rgba(238, 192, 235, 0.5);
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -138,7 +138,7 @@ div section p {
     opacity: 1;
   }
 }
-.text--animation {
+.text--animation, footer div a img {
   -webkit-animation-name: text--animation;
           animation-name: text--animation;
   -webkit-animation-duration: 3s;
@@ -146,7 +146,7 @@ div section p {
 }
 
 .button-bg {
-  background-color: coral;
+  background-color: rgb(255, 127, 80);
 }
 
 .card-bg {
@@ -176,8 +176,9 @@ div section p {
     text-align: center;
     gap: 30px;
     margin: 4vh 0;
-    overflow-y: hidden;
+    overflow-y: auto;
     width: 90%;
+    max-height: 15em;
   }
   .flex-usos {
     display: flex;
@@ -295,6 +296,14 @@ div section p {
   .main--info {
     text-align: center;
     overflow-y: hidden;
+  }
+  .main--info1 {
+    text-align: center;
+    gap: 30px;
+    margin: 4vh 0;
+    overflow-y: auto;
+    width: 90%;
+    max-height: 15em;
   }
   .menu {
     grid-column: 1/3;
@@ -449,7 +458,7 @@ div section p {
   .flex-contacto {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
   .mapa {
